@@ -10,7 +10,7 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ("campusonline", "0077_organizationtype_sciencebranch"),
+        ("campusonline", "0073_person_titles"),
     ]
 
     operations = [

@@ -45,9 +45,6 @@ class Token:
 class WebExTasks:
     @shared_task(bind=True, ignore_result=True, name=f"{__name__}.WebEx:person_room")
     def person_room(task):
-        import pudb
-
-        pu.db
         logging.info("Synchronizing personal room information")
         token = Token()
         base_url = URL(settings.WEBEX_BASE_URL)
